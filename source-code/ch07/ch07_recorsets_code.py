@@ -29,7 +29,8 @@ res.partner(15, 34)
 """
 
 >>> self.env["res.partner"].read_group([("display_name", "like", "Azure")], fields=["state_id:count_distinct",], groupby=["country_id"], lazy=False)
-[{'__count': 4, 'state_id': 1, 'country_id': (233, <odoo.tools.func.lazy object at 0x7f38ac66fa80>), '__domain': ['&', ('country_id', '=', 233), ('display_name', 'like', 'Azure')]}]
+[{'country_id': (233, '美国'), '__count': 4, 'state_id': 1, '__domain': ['&', ('display_name', 'like', 'Azure'), ('country_id', '=', 233)]}]
+
 >>> self.env["res.country"].browse(233).name
 'United States'
 
