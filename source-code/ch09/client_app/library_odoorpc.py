@@ -33,8 +33,8 @@ class LibraryAPI():
 
 if __name__ == "__main__":
     # 测试配置
-    host, port, db = "localhost", 8069, "odoo-dev"
-    user, pwd = "admin", "admin"
+    host, port, db = "localhost", 8069, "nov"
+    user, pwd = "dev@qike.ltd", "dev"
     api = LibraryAPI(host, port, db, user, pwd)
     from pprint import pprint
     pprint(api.search_read())

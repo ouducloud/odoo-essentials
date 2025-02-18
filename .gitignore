@@ -1,6 +1,5 @@
 HELP.md
 target
-xf-goods-provider/target/
 logs/
 tmp/
 !.mvn/wrapper/maven-wrapper.jar

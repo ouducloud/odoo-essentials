@@ -31,16 +31,16 @@
         </field>
     </record>
     <!-- 列表视图 -->
-    <record id="view_tree_book" model="ir.ui.view">
+    <record id="view_list_book" model="ir.ui.view">
         <field name="name">Book List</field>
         <field name="model">library.book</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="name" />
                 <field name="author_ids" widget="many2many_tags" />
                 <field name="publisher_id" />
                 <field name="date_published" />
-            </tree>
+            </list>
         </field>
     </record>
     <!-- 搜索视图 -->
